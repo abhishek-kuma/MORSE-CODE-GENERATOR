@@ -1,0 +1,93 @@
+from manim import *
+class animation(Scene):
+    def construct(self): 
+        str_ip="ABHI"
+        dash=Line().set_length(0.5)
+        dot=Dot()
+        A=VGroup(dot.copy(),dash.copy()).arrange(buff=0.1)
+        B=VGroup(dash.copy(),dot.copy(),dot.copy()).next_to(A).arrange(buff=0.1)
+        C=VGroup(dash.copy(),dot.copy(),dash.copy(),dot.copy()).arrange(buff=0.1)
+        D=VGroup(dash.copy(),dot.copy(),dot.copy()).arrange(buff=0.1)
+        E=VGroup(dot.copy()).arrange(buff=0.1)
+        F=VGroup(dot.copy(),dot.copy(),dash.copy(),dot.copy()).arrange(buff=0.1)
+        G=VGroup(dash.copy(),dash.copy(),dot.copy()).arrange(buff=0.1)
+        I=VGroup(dot.copy(),dot.copy()).arrange(buff=0.1)
+        H=VGroup(dot.copy(),dot.copy(),dot.copy(),dot.copy()).arrange(buff=0.1)
+        J=VGroup(dot.copy(),dash.copy(),dash.copy(),dash.copy()).arrange(buff=0.1)
+        K=VGroup(dash.copy(),dot.copy(),dash.copy()).arrange(buff=0.1)
+        L=VGroup(dot.copy(),dash.copy(),dot.copy(),dot.copy()).arrange(buff=0.1)
+        M=VGroup(dash.copy(),dash.copy()).arrange(buff=0.1)
+        N=VGroup(dash.copy(),dot.copy()).arrange(buff=0.1)
+        O=VGroup(dash.copy(),dash.copy(),dash.copy()).arrange(buff=0.1)
+        P=VGroup(dot.copy()).arrange(buff=0.1)
+        Q=VGroup(dash.copy(),dash.copy(),dot.copy(),dash.copy()).arrange(buff=0.1)
+        R=VGroup(dot.copy(),dash.copy(),dot.copy()).arrange(buff=0.1)
+        S=VGroup(dot.copy(),dot.copy(),dot.copy()).arrange(buff=0.1)
+        T=VGroup(dash.copy()).arrange(buff=0.1)
+        U=VGroup(dot.copy(),dot.copy(),dash.copy()).arrange(buff=0.1)
+        V=VGroup(dot.copy(),dot.copy(),dot.copy(),dash.copy()).arrange(buff=0.1)
+        W=VGroup(dot.copy(),dash.copy(),dash.copy()).arrange(buff=0.1)
+        X=VGroup(dash.copy(),dot.copy(),dot.copy(),dash.copy()).arrange(buff=0.1)
+        Y=VGroup(dash.copy(),dot.copy(),dash.copy(),dash.copy()).arrange(buff=0.1)
+        Z=VGroup(dash.copy(),dash.copy(),dot.copy(),dot.copy()).arrange(buff=0.1)
+        # self.play(Create(B))
+        # text=Text("MORSE :")
+        
+        vg=VGroup()
+        # self.add(text)
+        for x in str_ip:
+            if(x=='A'):
+                vg.add(A)
+            elif(x=='B'):
+                vg.add(B)
+            elif(x=='C'):
+                vg.add(C)
+            elif(x=='D'):
+                vg.add(D)
+            elif(x=='E'):
+                vg.add(E)
+            elif(x=='F'):
+                vg.add(F)
+            elif(x=='G'):
+                vg.add(G)
+            elif(x=='H'):
+                vg.add(H)
+            elif(x=='I'):
+                vg.add(I)
+            elif(x=='J'):
+                vg.add(J)
+            elif(x=='K'):
+                vg.add(K)
+            elif(x=='L'):
+                vg.add(L)
+            elif(x=='M'):
+                vg.add(M)
+            elif(x=='N'):
+                vg.add(N)
+            elif(x=='O'):
+                vg.add(O)
+            elif(x=='P'):
+                vg.add(P)
+            elif(x=='Q'):
+                vg.add(Q)
+            elif(x=='R'):
+                vg.add(R)
+            elif(x=='S'):
+                vg.add(S)
+            elif(x=='T'):
+                vg.add(T)
+            elif(x=='U'):
+                vg.add(U)
+            elif(x=='V'):
+                vg.add(V)
+            elif(x=='W'):
+                vg.add(W)
+            elif(x=='X'):
+                vg.add(X)
+            elif(x=='Y'):
+                vg.add(Y)
+            elif(x=='Z'):
+                vg.add(Z)
+        vg.arrange(LEFT)
+        # self.add(vg)
+        self.play(Create(vg))
